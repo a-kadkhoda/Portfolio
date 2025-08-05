@@ -12,7 +12,11 @@ const LatestBlogs = () => {
           {Array(3)
             .fill("")
             .map((_item, index) => {
-              return <BlogsCard key={index} />;
+              return (
+                <div className="w-[400px] h-[140px] " key={index}>
+                  <BlogsCard />
+                </div>
+              );
             })}
         </div>
       </div>

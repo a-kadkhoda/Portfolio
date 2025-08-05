@@ -8,11 +8,15 @@ const LatestProject = () => {
         آخرین پروژه ها
       </span>
       <div className="size-full flex items-center justify-center overflow-x-auto p-4 ">
-        <div className="flex gap-24 mt-42">
+        <div className="flex gap-24 mt-42 ">
           {Array(4)
             .fill("")
             .map((_item, index) => {
-              return <ProjectCard key={index} />;
+              return (
+                <div className="min-w-[300px] min-h-[130px]" key={index}>
+                  <ProjectCard />
+                </div>
+              );
             })}
         </div>
       </div>

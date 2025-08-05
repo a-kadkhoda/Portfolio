@@ -17,12 +17,10 @@ export default function RootLayout({
     <html dir="rtl" lang="fa" suppressHydrationWarning>
       <body>
         <Providers>
-          <main className="min-h-[calc(100vh-150px)] min-w-full">
-            <div className="container mx-auto">
-              <Navbar />
-              {children}
-            </div>
-          </main>
+          <div className="container mx-auto">
+            <Navbar />
+            {children}
+          </div>
         </Providers>
       </body>
     </html>

@@ -4,7 +4,7 @@ import React from "react";
 
 const BlogsCard = () => {
   return (
-    <div className="flex w-[400px] h-[140px] bg-background-gray rounded-xl overflow-hidden shadow-lg hover:bg-dark-blue transition-all duration-300 cursor-pointer">
+    <div className="flex size-full bg-background-gray rounded-xl overflow-hidden shadow-lg hover:bg-dark-blue transition-all duration-300 cursor-pointer">
       <div className="w-1/2 h-full">
         <Image
           src={"/blogTemp.png"}

@@ -5,7 +5,7 @@ import ProfileCard from "./ProfileCard";
 const HeroSection = () => {
   return (
     <div className="size-full ">
-      <div className="flex justify-between items-center">
+      <div className="size-full flex justify-between items-center">
         <div className="w-3/5 flex flex-col gap-8 ">
           <span className="text-5xl font-bold text-foreground">
             سلام! من <span className="text-blue-forground">علی اکبر کدخدا</span>{" "}

@@ -19,7 +19,7 @@ export default function RootLayout({
         <Providers>
           <div className="container mx-auto">
             <Navbar />
-            {children}
+            <main className="min-h-[calc(100svh-150px)]">{children}</main>
           </div>
         </Providers>
       </body>

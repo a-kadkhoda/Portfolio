@@ -48,6 +48,8 @@
   --color-sidebar-ring: var(--sidebar-ring);
   --color-blue-forground: var(--forground-blue);
   --color-main-blue: var(--main-blue);
+  --color-lighter-blue: var(--lighter-blue);
+  --color-dim-blue: var(--dim-blue);
   --color-dark-blue: var(--dark-blue);
   --color-background-gray: var(--background-gray);
   --color-foreground-gray: var(--foreground-gray);
@@ -122,6 +124,8 @@
   --sidebar-ring: oklch(0.556 0 0);
   --forground-blue: #0067a5;
   --main-blue: #0067a5;
+  --lighter-blue: #008cbd;
+  --dim-blue: #4769b1;
   --dark-blue: #1a2e39;
   --background-gray: #29292c;
   --foreground-gray: #868686;

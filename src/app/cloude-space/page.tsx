@@ -1,7 +1,7 @@
 import React from "react";
 
-const cloudeSpace = () => {
+const CloudeSpace = () => {
   return <div></div>;
 };
 
-export default cloudeSpace;
+export default CloudeSpace;

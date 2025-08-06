@@ -8,7 +8,7 @@ const Tags = () => {
       }}
       className="w-[160px] p-2 flex justify-center items-center rounded-lg "
     >
-      <span>PostgreSQL</span>
+      <span>Demo</span>
     </div>
   );
 };

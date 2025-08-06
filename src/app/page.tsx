@@ -1,7 +1,7 @@
 import AboutMe from "@/features/aboutMe/components/AboutMe";
 import HeroSection from "@/features/heroSection/components/HeroSection";
-import LatestBlogs from "@/features/latestBlogs/components/LatestBlogs";
-import LatestProject from "@/features/latestProject/components/LatestProject";
+import LatestBlogs from "@/features/blogs/components/LatestBlogs";
+import LatestProject from "@/features/projects/components/LatestProject";
 import Talents from "@/features/talents/components/Talents";
 
 export default function Home() {

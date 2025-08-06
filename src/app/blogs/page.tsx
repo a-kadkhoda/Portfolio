@@ -1,9 +1,10 @@
 import BlogsCard from "@/features/blogs/components/BlogsCard";
 import HeroBlogCard from "@/features/blogs/components/HeroBlogCard";
 import SearchBlogsBar from "@/features/blogs/components/SearchBlogsBar";
+import Link from "next/link";
 import React from "react";
 
-const Blog = () => {
+const Blogs = () => {
   return (
     <div className="size-full mt-20 pb-30 flex flex-col gap-18">
       <div className="flex flex-wrap gap-8 gap-y-16 justify-center">
@@ -11,9 +12,13 @@ const Blog = () => {
           .fill("")
           .map((_item, index) => {
             return index === 0 ? (
-              <div className={` w-[80%] h-[320px]`} key={index}>
+              <Link
+                href={"/blogs/1"}
+                className={` w-[80%] h-[320px]`}
+                key={index}
+              >
                 <HeroBlogCard />
-              </div>
+              </Link>
             ) : (
               <div className={` w-[420px] h-[160px]`} key={index}>
                 <BlogsCard />
@@ -39,4 +44,4 @@ const Blog = () => {
   );
 };
 
-export default Blog;
+export default Blogs;

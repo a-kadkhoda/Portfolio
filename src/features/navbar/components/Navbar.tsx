@@ -27,7 +27,7 @@ const navItems = [
   },
   {
     title: NavItems.Blog,
-    url: `/blog`,
+    url: `/blogs`,
   },
   {
     title: NavItems.CloudSpace,

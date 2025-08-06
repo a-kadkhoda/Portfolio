@@ -13,7 +13,7 @@ const LatestBlogs = () => {
             .fill("")
             .map((_item, index) => {
               return (
-                <div className="w-[400px] h-[140px] " key={index}>
+                <div className="w-[420px] h-[160px] " key={index}>
                   <BlogsCard />
                 </div>
               );

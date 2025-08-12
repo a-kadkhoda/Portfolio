@@ -1,0 +1,8 @@
+stages: [deploy]
+deploy:
+  stage: deploy
+  tags: [deploy]
+  only:
+    - production
+  script:
+    - /srv/deploy-scripts/deploy-next.sh "$APP_DIR" "$ENV_FILE" "$PM2_NAME" "$PORT"

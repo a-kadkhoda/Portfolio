@@ -24,7 +24,7 @@ export default function Home() {
                       Save and see your changes instantly.
                   </li>
                   <li className="tracking-[-.01em]">
-                      this is front-main-website
+                      this is front-main-website v2
                   </li>
               </ol>
 

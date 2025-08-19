@@ -1,10 +1,10 @@
-import Image from "next/image";
 import React from "react";
 import ProfileCard from "./ProfileCard";
+import ProfileImage from "./ProfileImage";
 
 const HeroSection = () => {
   return (
-    <div className="size-full ">
+    <div className="size-full flex flex-col gap-28">
       <div className="size-full flex justify-between items-center">
         <div className="w-3/5 flex flex-col gap-8 ">
           <span className="text-5xl font-bold text-foreground">
@@ -28,21 +28,19 @@ const HeroSection = () => {
           </div>
         </div>
         <div className="w-2/5">
-          <Image
-            src={"/me.png"}
-            className="size-full"
-            width={420}
-            height={420}
-            alt="me"
-          />
+          <ProfileImage />
         </div>
       </div>
-      <div className="size-full flex items-center justify-center overflow-x-auto p-4 ">
-        <div className="flex gap-30 mt-42">
+      <div className="size-full flex items-center justify-center overflow-x-auto ">
+        <div className="flex gap-x-16 mt-[calc(76px/2)]">
           {Array(5)
             .fill("")
             .map((_item, index) => {
-              return <ProfileCard key={index} />;
+              return (
+                <div className="w-[185px] h-[120px]" key={index}>
+                  <ProfileCard />
+                </div>
+              );
             })}
         </div>
       </div>

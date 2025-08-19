@@ -6,9 +6,8 @@ import Talents from "@/features/talents/components/Talents";
 
 export default function Home() {
   return (
-    <div className="size-full flex flex-col gap-40 pb-[180px]">
+    <>
       <HeroSection />
-
       <div className="size-full flex">
         <div className="w-[calc(50%-4px)] pt-8 pb-16 px-4">
           <Talents />
@@ -24,6 +23,6 @@ export default function Home() {
       <div className="size-full">
         <LatestBlogs />
       </div>
-    </div>
+    </>
   );
 }

@@ -1,20 +1,29 @@
 "use client";
+import { navItems } from "@/features/navbar/navItems";
+import { useNavStore } from "@/zustand/useNavStore";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import LanguegeSwitcher from "./languageSwitcher/LanguageSwitcher";
-import { navItems } from "../navItems";
-import { useNavStore } from "@/zustand/useNavStore";
 
-const Navbar = () => {
+const Footer = () => {
   const { currentNav, seCurrentNav } = useNavStore();
 
   return (
-    <div className="w-full h-[120px] flex justify-between items-center">
-      <div className="">
-        <LanguegeSwitcher />
+    <div className="h-[90px] w-full flex items-center justify-between  flex-row-reverse  ">
+      <div className="flex items-center flex-row-reverse ">
+        <span>Powerd By</span>
+        <div className="flex items-center">
+          <span>Fotros</span>
+          <Image
+            src={"/Fotros.svg"}
+            className="size-full"
+            width={24}
+            height={24}
+            alt="Fotros"
+          />
+        </div>
       </div>
-      <div className="flex justify-between w-1/3">
+      <ul className="flex gap-4">
         {navItems.map((item) => {
           return (
             <Link
@@ -29,18 +38,9 @@ const Navbar = () => {
             </Link>
           );
         })}
-      </div>
-      <div className="">
-        <Image
-          src={"/logos/logo.png"}
-          className="size-[36px]"
-          width={385}
-          height={385}
-          alt={"logo"}
-        />
-      </div>
+      </ul>
     </div>
   );
 };
 
-export default Navbar;
+export default Footer;

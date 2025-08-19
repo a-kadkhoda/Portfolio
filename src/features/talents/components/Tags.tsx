@@ -6,9 +6,9 @@ const Tags = () => {
       style={{
         background: " linear-gradient(180deg, #92C7FF 0%, #326091 100%)",
       }}
-      className="w-[160px] p-2 flex justify-center items-center rounded-lg "
+      className="w-[90px] h-[30px] p-2 flex justify-center items-center rounded-lg "
     >
-      <span>Demo</span>
+      <span className="text-sm font-medium">Demo</span>
     </div>
   );
 };

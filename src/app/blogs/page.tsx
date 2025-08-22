@@ -6,7 +6,7 @@ import React from "react";
 
 const Blogs = () => {
   return (
-    <div className="size-full mt-20 pb-30 flex flex-col gap-18">
+    <div className="size-full flex flex-col gap-18">
       <div className="flex flex-wrap gap-8 gap-y-16 justify-center">
         {Array(4)
           .fill("")

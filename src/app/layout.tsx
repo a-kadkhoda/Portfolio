@@ -19,9 +19,9 @@ export default function RootLayout({
       <body className="size-full">
         <section className=" size-full overflow-y-auto overflow-x-hidden relative">
           <Providers>
-            <div className=" 2xl:w-[calc(100%-520px)] xl:w-[calc(100%-260px)] mx-auto">
+            <div className=" 2xl:w-[calc(100%-520px)] xl:w-[calc(100%-240px)] lg:w-[calc(100%-210px)] mx-auto">
               <Navbar />
-              <main className=" min-h-[calc(100svh-150px)] py-20 ">
+              <main className=" min-h-[calc(100svh-150px)] 2xl:pt-14 xl:pt-24 pb-40">
                 {children}
               </main>
               <Footer />

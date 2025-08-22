@@ -4,14 +4,16 @@ import ProfileImage from "./ProfileImage";
 
 const HeroSection = () => {
   return (
-    <div className="size-full flex flex-col gap-28">
+    <div className="size-full flex flex-col 2xl:gap-28 xl:gap-52">
       <div className="size-full flex justify-between items-center">
         <div className="w-3/5 flex flex-col gap-8 ">
-          <span className="text-5xl font-bold text-foreground">
+          <span className="2xl:text-5xl xl:text-4xl font-bold text-foreground">
             سلام! من <span className="text-blue-forground">علی اکبر کدخدا</span>{" "}
             هستم
           </span>
-          <span className="font-bold text-4xl">توسعه دهنده فول استک</span>
+          <span className="font-bold 2xl:text-4xl xl:text-3xl">
+            توسعه دهنده فول استک
+          </span>
           <div className="flex gap-6">
             <button
               type="button"

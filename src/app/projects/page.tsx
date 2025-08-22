@@ -4,7 +4,7 @@ import React from "react";
 
 const Projects = () => {
   return (
-    <div className="size-full flex gap-40 flex-wrap  mt-42 pb-30">
+    <div className="size-full flex gap-40 flex-wrap  ">
       {Array(10)
         .fill("")
         .map((_item, index) => {
